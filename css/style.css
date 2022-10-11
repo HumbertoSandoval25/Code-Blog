@@ -33,6 +33,10 @@ body{
 h1,h2,h3{
     color: var(--title-color);
     font-weight: var(--font-bold);
+    margin-bottom: 1.8rem;
+}
+p{
+    margin-bottom: 3rem;
 }
 ul{
     list-style: none;
@@ -42,7 +46,8 @@ a{
 }
 img{
     height: auto;
-    max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
 }
 button{
     border: none;
@@ -57,6 +62,12 @@ button{
 .section{
     max-width: 100%;
     padding: 2.4rem 0;
+}
+.author{
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    color: #7b7979;
 }
 /* ======= HEADER ===== */
 .nav{
@@ -80,10 +91,8 @@ button{
     background-color:var(--first-color);
 }
 .banner__title{
-    font-weight: 700;
     font-size: 3.5rem;
     color: var(--container-color);
-    margin-bottom: 1.8rem;
 }
 .banner__info p{
     color: var(--container-color);
@@ -103,6 +112,16 @@ button{
     border-radius: 5px;
     background-color: var(--button-color);
     color: var(--container-color);
+}
+/* ===== MAIN ARTICLES ====== */
+.articles{
+    display: flex;
+    flex-direction: column;
+}
+.first__article__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @media(min-width:769px){
@@ -131,4 +150,14 @@ button{
     .banner__form .button{
         width: 5rem;
     }
+    /* MAIN ARTICLES */
+    .articles__wrap article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    } 
+
+}
+@media(min-width:1024px){
+    
 }
