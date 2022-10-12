@@ -66,6 +66,7 @@ button{
     margin-top: 1.5rem;
     color: #7b7979;
 }
+
 /* ======= HEADER ===== */
 .nav{
     display: flex;
@@ -285,3 +286,7 @@ button{
 }
 
 /* ===================================== */
+/* ABOUT US */
+.mission{
+    text-align: center;
+}
