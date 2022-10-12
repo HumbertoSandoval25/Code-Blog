@@ -33,10 +33,6 @@ body{
 h1,h2,h3{
     color: var(--title-color);
     font-weight: var(--font-bold);
-    margin-bottom: 1.8rem;
-}
-p{
-    margin-bottom: 3rem;
 }
 ul{
     list-style: none;
@@ -63,7 +59,7 @@ button{
     max-width: 100%;
     padding: 2.4rem 0;
 }
-.author{
+.article__author{
     text-transform: uppercase;
     font-size: 1rem;
     margin-top: 1.5rem;
@@ -118,11 +114,39 @@ button{
     display: flex;
     flex-direction: column;
 }
-.first__article__info{
+.article, .article__big{
+    margin-bottom: 2rem;
+}
+/* ====== MESSAGE SECTION ====== */
+.message__section{
+    background-color: var(--first-color);
+    border-radius: 10px;
+}
+.message__info{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
 }
+.message__info svg{
+    color: var(--container-color);
+    margin-bottom: 1rem;
+}
+.message__text h2, .message__text p{
+    color: var(--container-color);
+    margin: 0;
+    text-align: center;
+}
+.message__button{
+    width: 9.5rem;
+    height: 4rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+.message__button a{
+    color: var(--black-color);
+    font-weight: bold;
+}
+/* ====== BLOG SECTIN ======= */
 
 @media(min-width:769px){
     .menu-icon{
@@ -156,8 +180,41 @@ button{
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
     } 
+    /* MESSAGE SECTION */
+    .message__info{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
 
 }
-@media(min-width:1024px){
-    
+@media(min-width:992px){
+    .nav__menu{
+        margin-right: 4rem;
+    }
+    .articles{
+        display: grid;
+        grid-template-columns: 50% auto;
+        gap: 4rem;
+    }
+    .article__big h2{
+        font-size: 2.5rem;
+    }
+    .blog .article__big{
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+    .blog .articles__aside{
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+}
+
+@media(min-width:1200px){
+    .articles{
+    padding: 10rem;
+   } 
+   .message__section{
+    margin: 0 10rem;
+   }
 }
