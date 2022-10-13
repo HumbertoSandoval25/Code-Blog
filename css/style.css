@@ -370,11 +370,9 @@ button{
     .footer__form form{
         display: flex;
     }
-<<<<<<< HEAD
     .about{
         padding: 0 10rem;
     }
-=======
     /* BLOG */
     .search-blog{
         padding: 0 10rem;
@@ -387,7 +385,6 @@ button{
         grid-column: 2 / 3;
     }
 
->>>>>>> blog
 }
 
 @media(min-width:1200px){
