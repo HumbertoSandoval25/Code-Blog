@@ -244,23 +244,28 @@ button{
 }
 .blue{
     color: var(--first-color);
+    text-transform: uppercase;
 }
 .search-blog input{
     width: min(55.5rem, 100%);
-    position: relative;
-    padding: .4rem;
+    padding: .6rem;
     margin-top: 2rem;
+}
+.search-blog__form{
+    position: relative;
+    display: inline;
 }
 .search-blog i{
     color: var(--first-color);
     position: absolute;
-    right: 3rem;
-    top: 11.7rem;
+    right: 1rem;
+    bottom: 0;
+    font-size: 2rem;
 }
 .load-more{
     padding: 1.5rem;
     border-radius: 5px;
-    width: min(60rem, 100%);
+    width: 100%;
     margin-bottom: 3rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -323,8 +328,11 @@ button{
     .search-blog{
         font-size: 2rem;
     }
-    .blog{
-        grid-template-columns: 1fr 1fr;
+    .blog__cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .load-more{
+        grid-column: 1 / 3;
     }
 }
 
@@ -365,6 +373,18 @@ button{
     .footer__form form{
         display: flex;
     }
+    /* BLOG */
+    .search-blog{
+        padding: 0 10rem;
+    }
+    .blog__cards{
+        grid-template-columns: repeat(3,1fr);
+        padding: 0 10rem;
+    }
+    .load-more{
+        grid-column: 2 / 3;
+    }
+
 }
 
 @media(min-width:1200px){
