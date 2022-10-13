@@ -274,12 +274,12 @@ button{
         align-items: center;
     }
     /* ABOUT US */
+    .about{
+        padding: 0 10rem;
+    }
     .cards{
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: 1fr 1fr;
-    }
-    .subjects__images{
-        grid-template-columns: 1fr 1fr 1fr;
     }
     .wrap{
         grid-template-columns: 1fr 1fr;
@@ -289,9 +289,6 @@ button{
     }
     .perks-benefits__card p{
         width: 80%;
-    }
-    .about{
-        padding: 0 10rem;
     }
 
 }
