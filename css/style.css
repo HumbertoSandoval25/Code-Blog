@@ -237,6 +237,35 @@ button{
 .perks-benefits__card span{
     font-weight: 700;
 }
+/* ======================================== */
+/* BLOG */
+.search-blog{
+    font-size: 1.5rem;
+}
+.blue{
+    color: var(--first-color);
+}
+.search-blog input{
+    width: min(55.5rem, 100%);
+    position: relative;
+    padding: .4rem;
+    margin-top: 2rem;
+}
+.search-blog i{
+    color: var(--first-color);
+    position: absolute;
+    right: 3rem;
+    top: 11.7rem;
+}
+.load-more{
+    padding: 1.5rem;
+    border-radius: 5px;
+    width: min(60rem, 100%);
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
 @media(min-width:768px){
     .menu-icon{
         display: none;
@@ -290,8 +319,15 @@ button{
     .perks-benefits__card p{
         width: 80%;
     }
-
+    /* BLOG */
+    .search-blog{
+        font-size: 2rem;
+    }
+    .blog{
+        grid-template-columns: 1fr 1fr;
+    }
 }
+
 @media(min-width:992px){
     .nav__menu{
         margin-right: 4rem;
