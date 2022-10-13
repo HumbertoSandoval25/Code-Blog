@@ -66,7 +66,15 @@ button{
     margin-top: 1.5rem;
     color: #7b7979;
 }
-
+.title{
+    color: var(--first-color);
+    text-align: center;
+    font-size: 1.5em;
+}
+.grid{
+    display: grid;
+    gap: 2rem;
+}
 /* ======= HEADER ===== */
 .nav{
     display: flex;
@@ -197,7 +205,38 @@ button{
 .rights{
     text-align: center;
 }
-
+/* ===================================== */
+/* ABOUT US */
+.info{
+    text-align: center;
+}
+.cards{
+    grid-template-columns: 1fr;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}.cards i{
+    font-size: 4rem;
+    color: var(--first-color);
+}
+.card:hover{
+    transform:scale(1.05)
+}
+.perks-benefits__card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.perks-benefits__card span{
+    font-weight: 700;
+}
 @media(min-width:768px){
     .menu-icon{
         display: none;
@@ -233,6 +272,26 @@ button{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+    }
+    /* ABOUT US */
+    .cards{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    .subjects__images{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .wrap{
+        grid-template-columns: 1fr 1fr;
+    }
+    .perks-benefits__card img{
+        width: 20%;
+    }
+    .perks-benefits__card p{
+        width: 80%;
+    }
+    .about{
+        padding: 0 10rem;
     }
 
 }
@@ -285,8 +344,3 @@ button{
 
 }
 
-/* ===================================== */
-/* ABOUT US */
-.mission{
-    text-align: center;
-}
