@@ -237,6 +237,12 @@ button{
 .perks-benefits__card span{
     font-weight: 700;
 }
+.perks-benefits__card img{
+    width: 40%;
+}
+.perks-benefits__card p{
+    width: 60%;
+}
 /* ======================================== */
 /* BLOG */
 .search-blog{
