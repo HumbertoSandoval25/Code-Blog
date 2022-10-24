@@ -277,6 +277,10 @@ button{
     font-weight: 700;
     font-size: 1.2rem;
 }
+/* Newsletter */
+.height-adjust{
+    height: 60vh;
+}
 @media(min-width:768px){
     .menu-icon{
         display: none;
