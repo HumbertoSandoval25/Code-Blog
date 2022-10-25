@@ -278,8 +278,22 @@ button{
     font-size: 1.2rem;
 }
 /* Newsletter */
-.height-adjust{
-    height: 60vh;
+.newsletter h1,
+.newsletter h2{
+    font-size: 3rem;
+    color: var(--first-color);
+    line-height: 1;
+    margin: 2rem 0;
+}
+.newsletter__btn{
+    padding: 2.5rem;
+    border: none;
+    border-radius: 28px;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
+.newsletter__img{
+    width: min(100%, 40rem);
 }
 /* ========================================= */
 /* Contact Form */
@@ -395,6 +409,10 @@ button{
     }
     .load-more{
         grid-column: 1 / 3;
+    }
+    /* Newsletter */
+    .newsletter{
+        grid-template-columns: 2fr 1fr;
     }
 }
 
